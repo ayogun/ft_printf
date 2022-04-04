@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_ptr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayogun <ayogun@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yogun <yogun@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 18:54:01 by ayogun            #+#    #+#             */
-/*   Updated: 2022/04/03 18:54:03 by ayogun           ###   ########.fr       */
+/*   Updated: 2022/04/04 14:53:53 by yogun            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	ft_put_ptr(uintptr_t num)
 	}
 }
 
-int	ft_print_ptr(unsigned long long ptr)
+int	ft_print_ptr(uintptr_t ptr)
 {
 	int	print_length;
 

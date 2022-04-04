@@ -6,7 +6,7 @@
 #    By: yogun <yogun@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/04 11:45:01 by yogun             #+#    #+#              #
-#    Updated: 2022/04/04 11:58:52 by yogun            ###   ########.fr        #
+#    Updated: 2022/04/04 14:44:15 by yogun            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,6 +67,10 @@ SRC_FILES+=$(addprefix $(FTLST_DIR),$(FTLST))
 
 SRCS 		= 	$(addprefix $(SRCS_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS 		= 	$(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRC_FILES)))
+
+###
+
+OBJSF		=	.cache_exists
 
 all:		$(NAME)
 

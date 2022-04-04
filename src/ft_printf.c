@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayogun <ayogun@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yogun <yogun@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 17:28:14 by ayogun            #+#    #+#             */
-/*   Updated: 2022/04/03 18:47:19 by ayogun           ###   ########.fr       */
+/*   Updated: 2022/04/04 14:54:01 by yogun            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_formats(va_list *args, const char format)
 	else if (format == 's')
 		print_length += ft_printstr(va_arg(*args, char *));
 	else if (format == 'p')
-		print_length += ft_print_ptr(va_arg(*args, unsigned long long));
+		print_length += ft_print_ptr(va_arg(*args, uintptr_t));
 	else if (format == 'd' || format == 'i')
 		print_length += ft_printnbr(va_arg(*args, int));
 	else if (format == 'u')
