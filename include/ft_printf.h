@@ -6,7 +6,7 @@
 /*   By: ayogun <ayogun@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 17:27:24 by ayogun            #+#    #+#             */
-/*   Updated: 2022/04/03 18:46:17 by ayogun           ###   ########.fr       */
+/*   Updated: 2022/04/04 11:36:23 by ayogun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,6 @@
 # include <stdarg.h>
 # include <unistd.h>
 
-// typedef struct s_arg
-// {
-// 	va_list	args;
-// }	t_arg;
-
 int		ft_printf(const char *format, ...);
 int		ft_formats(va_list *args, const char format);
 int		ft_printchar(int c);
@@ -32,7 +27,6 @@ int		ft_printnbr(int n);
 int		ft_print_unsigned(unsigned int n);
 int		ft_print_hex(unsigned int num, const char format);
 int		ft_printpercent(void);
-
 void	ft_putstr(char *str);
 void	ft_put_ptr(uintptr_t num);
 int		ft_ptr_len(uintptr_t num);

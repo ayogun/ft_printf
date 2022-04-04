@@ -3,12 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ajordan- <ajordan-@student.42urduliz.com>  +#+  +:+       +#+         #
+#    By: yogun <yogun@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/27 09:39:13 by ajordan-          #+#    #+#              #
-#    Updated: 2021/10/20 02:25:41 by ajordan-         ###   ########.fr        #
+#    Created: 2022/04/04 11:45:01 by yogun             #+#    #+#              #
+#    Updated: 2022/04/04 11:58:52 by yogun            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
+
 
 #Standard
 
@@ -65,10 +67,6 @@ SRC_FILES+=$(addprefix $(FTLST_DIR),$(FTLST))
 
 SRCS 		= 	$(addprefix $(SRCS_DIR), $(addsuffix .c, $(SRC_FILES)))
 OBJS 		= 	$(addprefix $(OBJS_DIR), $(addsuffix .o, $(SRC_FILES)))
-
-###
-
-OBJSF		=	.cache_exists
 
 all:		$(NAME)
 

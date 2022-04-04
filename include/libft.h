@@ -6,7 +6,7 @@
 /*   By: ayogun <ayogun@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/30 17:27:44 by ayogun            #+#    #+#             */
-/*   Updated: 2022/04/03 18:23:27 by ayogun           ###   ########.fr       */
+/*   Updated: 2022/04/04 11:16:55 by ayogun           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,7 +58,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 char	**ft_split(char const *s, char c);
-
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
